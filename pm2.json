@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "Unix Socket Server",
+      "script": "storage-server.js",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "env": {}
+    },
+    {
+      "name": "App",
+      "script": "app.js",
+      "exec_mode": "cluster",
+      "instances": 3,
+      "env": {}
+    }
+  ]
+}
